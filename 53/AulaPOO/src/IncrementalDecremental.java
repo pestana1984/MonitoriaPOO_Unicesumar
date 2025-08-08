@@ -1,18 +1,19 @@
 public class IncrementalDecremental {
-        public static void main(String[] args) {
 
-            int referencia;
+    public static void main(String[] args) {
 
-            referencia = 100;
+        int referencia;
 
-            System.out.println("O referencia foi: " + referencia);
-            referencia++;
-            System.out.println("O valor da referencia agora é: " + referencia);
+        referencia = 100;
 
-            referencia--;
+        System.out.println("O referencia foi: " + referencia);
+        referencia++;
+        System.out.println("O valor da referencia agora é: " + referencia);
 
-            //referencia--;
+        referencia--;
 
-            System.out.println("O valor da referencia agora é: " + referencia);
-        }
+        //referencia--;
+
+        System.out.println("O valor da referencia agora é: " + referencia);
+    }
 }
