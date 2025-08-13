@@ -25,6 +25,7 @@ public class Aritmetico {
 
         System.out.println("O resultado da divisão é: " + resultado);
 
-
     }
 }
+
+
