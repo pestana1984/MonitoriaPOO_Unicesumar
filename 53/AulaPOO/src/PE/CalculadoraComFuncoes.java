@@ -1,3 +1,5 @@
+package PE;
+
 import java.util.Scanner;
 
 public class CalculadoraComFuncoes {
@@ -62,6 +64,8 @@ public class CalculadoraComFuncoes {
         int opcaoMenu;
         double resultado = 0;
 
+        LerNumeros();
+
         do {
             opcaoMenu = Menu();
             switch (opcaoMenu) {
@@ -91,8 +95,6 @@ public class CalculadoraComFuncoes {
                     System.out.println("Opcao invalida!");
                     break;
             }
-
         } while (opcaoMenu != 5);
-
     }
 }

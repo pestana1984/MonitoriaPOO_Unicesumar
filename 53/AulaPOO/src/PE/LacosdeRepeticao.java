@@ -1,3 +1,5 @@
+package PE;
+
 public class LacosdeRepeticao {
     public static void main(String[] args) throws InterruptedException {
 
