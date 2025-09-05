@@ -14,6 +14,7 @@ public class Livro {
 
     //MÉTODOS ou OPERAÇÕES
 
+    //Método Construtor
     public Livro(){
         Scanner teclado = new Scanner(System.in);
 
@@ -37,7 +38,6 @@ public class Livro {
         this.preco = teclado.nextDouble();
     }
 
-
     public void abrirLivro(){
         System.out.println("Livro aberto!");
     }
@@ -53,4 +53,25 @@ public class Livro {
     public void venderLivro(){
         System.out.println("Livro vendido!");
     }
+
+    public void alterarPreco(double novopreco){
+        this.preco = novopreco;
+        System.out.println("O valor do livro foir alterado para :" + novopreco);
+    }
+
+    public void receberDesconto(int desconto){
+
+        this.preco = this.preco - (this.preco * desconto / 100);
+        System.out.println("O valor do livro com desconto é: " + this.preco);
+    }
+
+    public String mostrarLivro(){
+        return ("\nTitulo: " + this.titulo +
+                "\nAutor: " + this.autor +
+                "\nCategoria: " + this.categoria +
+                "\nQuantidade de Páginas: " + this.qtddepaginas +
+                "\nISBN: " + this.isbn +
+                "\nPreço do livro: " + this.preco);
+    }
+
 }
